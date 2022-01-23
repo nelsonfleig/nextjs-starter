@@ -4,5 +4,5 @@ module.exports = {
   // Run ESLint on changes to JavaScript/TypeScript files
   '**/*.(ts|js)?(x)': filenames => `yarn lint . ${filenames.join(' ')}`,
   // Prettify on changes to JavaScript/TypeScript files
-  '**/*.(ts|js)?(x)': () => `yarn format`,
+  '**/*.(ts|js)?(x)': filenames => `yarn prettier --write . ${filenames.join(' ')}`,
 };

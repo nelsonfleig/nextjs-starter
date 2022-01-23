@@ -16,4 +16,4 @@ jobs:
         run: yarn prettier --write .
 
       - name: Run ESLint
-        run: yarn eslint '**/*.js' --report-unused-disable-directives
+        run: yarn eslint '**/*.(ts|js)?(x)' --report-unused-disable-directives
