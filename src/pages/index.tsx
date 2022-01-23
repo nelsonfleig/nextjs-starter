@@ -3,6 +3,9 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 
+const test = 'hi';
+console.log('forbidden console log');
+
 const Home: NextPage = () => (
   <div className={styles.container}>
     <Head>
