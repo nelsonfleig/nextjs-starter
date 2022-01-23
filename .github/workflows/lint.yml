@@ -12,7 +12,7 @@ jobs:
       - name: Install dependencies
         run: yarn
 
-      - name: Run Prettier
+      - name: Run Type Check
         run: yarn check-types
 
       - name: Run Prettier
