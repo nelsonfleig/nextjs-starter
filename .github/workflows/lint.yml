@@ -1,6 +1,6 @@
 name: Code quality
 
-on: [push, pull_request]
+on: [pull_request]
 
 jobs:
   code-quality:
@@ -13,7 +13,10 @@ jobs:
         run: yarn
 
       - name: Run Prettier
-        run: yarn prettier --write .
+        run: yarn check-types
+
+      - name: Run Prettier
+        run: yarn check-format
 
       - name: Run ESLint
-        run: yarn eslint '**/*.(ts|js)?(x)' --report-unused-disable-directives
+        run: yarn check-lint
