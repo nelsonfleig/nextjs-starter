@@ -1,6 +1,6 @@
 name: Code quality
 
-on: push
+on: [push, pull_request]
 
 jobs:
   code-quality:
@@ -13,7 +13,7 @@ jobs:
         run: yarn
 
       - name: Run Prettier
-        run: yarn prettier --ignore-path .prettierignore --write .
+        run: yarn prettier --write .
 
       - name: Run ESLint
         run: yarn eslint '**/*.js' --report-unused-disable-directives
