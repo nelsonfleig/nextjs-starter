@@ -19,7 +19,7 @@ a new project.
 
 Many of the scripts I used were borrowed or adapted from the following sources:
 
-[Typescript-ES-Lint-Template](https://github.com/samfromaway/Typescript-ES-Lint-Template)
+[Typescript-ES-Lint-Template](https://github.com/samfromaway/Typescript-ES-Lint-Template) <br/>
 [nextjs-starter-pack](https://github.com/miami78/nextjs-starter-pack)
 
 ## VS Code Extensions
